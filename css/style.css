@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+
 }
 
 .wrapper{
@@ -33,8 +34,6 @@ header{
     position: fixed;
     width: 100%;
     height: 13vh;
- 
-    
 }
 footer{
     grid-area: ft;
@@ -42,7 +41,6 @@ footer{
 }
 .rubrik{
     grid-area: ru;
-    background-color: azure;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +50,6 @@ footer{
 
 section{
     grid-area: sc;
-    background-color: aquamarine;
 }
 #sc1{
     grid-area: sc1;
@@ -101,11 +98,12 @@ a{
 #rubrik{
     font-size: 100px;
     color: white;
-
+    background-color: rgba(0, 0, 0, 0.537);
 }
 .rubrik{
     background-image: url(/img/jelmer-assink-gzeTjGu3b_k-unsplash.jpg);
     background-position: center;
+
 }
 a:hover{
     color: blue;
@@ -113,8 +111,60 @@ a:hover{
 h2{
     font-size: 60px;
     color: white;
+    background-color: rgba(0, 0, 0, 0.537);
 }
-p{
-    font-size: 30px;
-    color: white;
+
+
+.wrapper3{
+    display: grid;
+    grid-template-areas:
+    'hd hd hd hd hd'
+    'ar ar ar ar ar'
+    'p1 p2 p3 p4 p5'
+    'ft ft ft ft ft'
+     ;
+     grid-template-rows: 13vh 90vh 30vh 1fr;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+     height: 140vh;
+     
+}
+.p1{
+    grid-area: p1;
+    background-color: bisque;
+}
+.p2{
+    grid-area: p2;
+    background-color: aliceblue;
+}
+.p3{
+    grid-area: p3;
+}
+.p4{
+    grid-area: p4;
+}
+.p5{
+    grid-area: p5;
+}
+article{
+    grid-area: ar;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 50px 50px 50px;
+    
+}
+.stortext{
+    font-size: 160px;
+   
+}
+.brodtext{
+    font-size: 40px;
+}
+.mindretext{
+    font-size: 80px;
+}
+li{
+    font-size: 40px;
 }
