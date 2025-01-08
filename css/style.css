@@ -15,7 +15,6 @@
     ;
     grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: 10vh 65vh 69vh 10vh;
-    height: auto;
     gap: 25px;
     background-color: rgb(255, 255, 255);
  
