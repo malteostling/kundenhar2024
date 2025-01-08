@@ -83,7 +83,7 @@ section{
 }
 nav{
     grid-area: nv;
-  
+
 }
 
 h1{
@@ -125,6 +125,7 @@ h2{
     grid-template-columns: 1fr;
     grid-template-rows: 13vh 40vh repeat(3, 60vh) 1fr;
     height: 250vh;
+    gap: 20px;
 }
 .rubrik2{
     grid-area: ru2;
@@ -133,15 +134,45 @@ h2{
 }
 .sc1{
     grid-area: sc1;
-    background-color: bisque;
+    background-color: var(--farg);
+    display: grid;
+    grid-template-areas: 
+    'tx2 bi2';
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    border-radius: 80px;
 }
 .sc2{
     grid-area: sc2;
-    background-color: blue;
+    background-color: var(--farg);
+    display: grid;
+    grid-template-areas: 
+    'tx2 bi2';
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    border-radius: 80px;
 }
 .sc3{
     grid-area: sc3;
-    background-color: blueviolet;
+    background-color: var(--farg);
+    display: grid;
+    grid-template-areas: 
+    'tx2 bi2';
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    border-radius: 80px;
+}
+.bi2{
+    grid-area: bi2;
+}
+.tx2{
+    grid-area: tx2;
+    padding: 10px 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
 }
 .wrapper3{
     display: grid;
@@ -245,7 +276,6 @@ h2{
 }
 article{
     grid-area: ar;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
