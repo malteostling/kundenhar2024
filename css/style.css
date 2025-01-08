@@ -117,13 +117,32 @@ h2{
     display: grid;
     grid-template-areas: 
     'hd'
-    'ru'
-    'sc21'
-    'sc22'
-    'sc23'
+    'ru2'
+    'sc1'
+    'sc2'
+    'sc3'
     'ft';
+    grid-template-columns: 1fr;
+    grid-template-rows: 13vh 40vh repeat(3, 60vh) 1fr;
+    height: 250vh;
 }
-
+.rubrik2{
+    grid-area: ru2;
+    background-color: aquamarine;
+    
+}
+.sc1{
+    grid-area: sc1;
+    background-color: bisque;
+}
+.sc2{
+    grid-area: sc2;
+    background-color: blue;
+}
+.sc3{
+    grid-area: sc3;
+    background-color: blueviolet;
+}
 .wrapper3{
     display: grid;
     grid-template-areas:
